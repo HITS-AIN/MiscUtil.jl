@@ -1,6 +1,6 @@
 
 #-----------------------------------------------------------
-#
+# Woodbury inequality for efficient inverse calculation
 #-----------------------------------------------------------
 
 
@@ -24,7 +24,7 @@ woodbury_A_plus_UCV(; A⁻¹=A⁻¹, U=U, C⁻¹=C⁻¹, V=V) =  A⁻¹ - A⁻¹
 
 
 #-----------------------------------------------------------
-#
+# Make matrix symmetric by adding its transpose
 #-----------------------------------------------------------
 
 function makematrixsymmetric!(A)
@@ -45,7 +45,7 @@ end
 
 
 #-----------------------------------------------------------
-#
+# Add a small constant, i.e. jitter to the diagonal
 #-----------------------------------------------------------
 
 
@@ -71,30 +71,75 @@ addjitter(A, JITTER = 1e-8) = A + JITTER*I
 
 
 #-----------------------------------------------------------
-#
+# Wrapper for ensuring that in case function call fails,
+# a default value (e.g. Inf) is returned
 #-----------------------------------------------------------
 
+function safewrapper(f; E = PosDefException, inform::Bool=false, retvalue = Inf)
 
-function safewrapper(f; E = PosDefException, inform::Bool=false)
+    function safe_f(x)
 
-    try
+        try
 
-        return x -> f(x)
+            f(x)
 
-    catch err
+        catch err
 
-        if isa(err, E)
+            if isa(err, E)
 
-            inform ? warn("Caught exception, returning Inf") : nothing
+                inform ? @warn("Caught exception!") : nothing
 
-            return Inf
+                return retvalue
 
-        else
+            else
 
-            throw(err)
+                throw(err)
+
+            end
 
         end
 
     end
+
+end
+
+
+
+#-----------------------------------------------------------
+# RBF basis calculation
+#-----------------------------------------------------------
+
+function calculaterbfbasis!(Φ, x, gridpoints, r=1.0)
+
+    M = length(gridpoints)
+
+    N = length(x)
+
+    for m in 1:M
+
+        for n in 1:N
+
+            @inbounds Φ[n,m] = exp(-norm(gridpoints[m] - x[n])^2 / r^2)
+
+        end
+
+    end
+
+    nothing
+
+end
+
+
+function calculaterbfbasis(x, gridpoints, r=1.0)
+
+    M = length(gridpoints)
+
+    N = length(x)
+
+    Φ = zeros(N, M)
+
+    calculaterbfbasis!(Φ, x, gridpoints, r)
+
+    return Φ
 
 end
