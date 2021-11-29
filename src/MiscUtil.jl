@@ -1,23 +1,28 @@
 module MiscUtil
 
-using LinearAlgebra
-
-using Printf, Crayons
+    using LinearAlgebra
 
 
-export calculaterbfbasis, calculaterbfbasis!
+    # export calculaterbfbasis, calculaterbfbasis!
 
-export safewrapper
+    export safewrapper
 
-export addjitter, addjitter!
+    export addjitter, addjitter!
 
-export makematrixsymmetric, makematrixsymmetric!
+    export makematrixsymmetric, makematrixsymmetric!
 
-export woodbury_A_plus_UCV
+    export woodbury_A_plus_UCV
 
-export tasksleep
+    export tasksleep
 
+    export sigmoid, invsigmoid, makepositive, invmakepositive, transformbetween, invtransformbetween
 
-include("util.jl")
+    include("transformutil.jl")
+
+    include("matricesutil.jl")
+
+    include("sleeputil.jl")
+
+    include("safewrapper.jl")
 
 end
