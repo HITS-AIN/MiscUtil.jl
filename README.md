@@ -9,7 +9,7 @@ Provides common utilities:
 
 ### Matrix relates
 - `addjitter` and `addjitter!`
-- `makesymmetric` and `makesymmetric!`
+- `makematrixsymmetric` and `makematrixsymmetric!`
 - `woodbury_A_plus_UCV`
 
 ### Other
