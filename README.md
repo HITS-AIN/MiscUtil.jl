@@ -7,7 +7,7 @@ Provides common utilities:
 - `makepositive` and `invmakepositive`
 - `transformbetween` and `invtransformbetween`
 
-### Matrix relates
+### Matrix related
 - `addjitter` and `addjitter!`
 - `makematrixsymmetric` and `makematrixsymmetric!`
 - `woodbury_A_plus_UCV`
