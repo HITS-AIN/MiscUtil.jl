@@ -1,6 +1,6 @@
 module MiscUtil
 
-    using LinearAlgebra
+    using LinearAlgebra, Printf, Crayons
 
 
     # export calculaterbfbasis, calculaterbfbasis!
