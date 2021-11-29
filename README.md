@@ -11,6 +11,7 @@ Provides common utilities:
 - `addjitter` and `addjitter!`
 - `makematrixsymmetric` and `makematrixsymmetric!`
 - `woodbury_A_plus_UCV`
+- `nearestposdef`
 
 ### Other
 - `tasksleep`
