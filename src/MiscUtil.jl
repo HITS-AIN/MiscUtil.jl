@@ -11,6 +11,8 @@ module MiscUtil
 
     export makematrixsymmetric, makematrixsymmetric!
 
+    export nearestposdef
+
     export woodbury_A_plus_UCV
 
     export tasksleep
