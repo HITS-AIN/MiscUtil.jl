@@ -16,4 +16,5 @@ Provides common utilities:
 ### Other
 - `tasksleep`
 - `safewrapper`
+- `logrange`
 
