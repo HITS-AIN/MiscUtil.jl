@@ -19,6 +19,8 @@ module MiscUtil
 
     export sigmoid, invsigmoid, makepositive, invmakepositive, transformbetween, invtransformbetween
 
+    export logrange
+
     include("transformutil.jl")
 
     include("matricesutil.jl")
@@ -26,5 +28,7 @@ module MiscUtil
     include("sleeputil.jl")
 
     include("safewrapper.jl")
+
+    include("logrange.jl")
 
 end
