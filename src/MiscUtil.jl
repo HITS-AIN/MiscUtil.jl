@@ -21,7 +21,9 @@ module MiscUtil
 
     export logrange
 
-    export bracket, bracketkernel, brackettransferfunction
+    export bracket
+
+    export colourprint
 
     include("transformutil.jl")
 
@@ -34,5 +36,7 @@ module MiscUtil
     include("logrange.jl")
 
     include("bracket.jl")
+
+    include("colourprint.jl")
 
 end
