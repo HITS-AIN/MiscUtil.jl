@@ -24,6 +24,3 @@ function bracket(f; Tinitial = 0.0)
     max(abs(leftbnd), abs(rightbnd))
 
 end
-
-bracketkernel(f; x = 0.0)           = bracket(f; Tinitial = x)
-brackettransferfunction(f; x = 0.0) = bracket(f; Tinitial = x)
