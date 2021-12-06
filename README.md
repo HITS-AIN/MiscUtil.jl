@@ -17,4 +17,5 @@ Provides common utilities:
 - `tasksleep`
 - `safewrapper`
 - `logrange`
+- `bracket`
 
