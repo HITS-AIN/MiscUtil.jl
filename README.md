@@ -18,4 +18,5 @@ Provides common utilities:
 - `safewrapper`
 - `logrange`
 - `bracket`
+- `colourprint`
 
