@@ -19,4 +19,5 @@ Provides common utilities:
 - `logrange`
 - `bracket`
 - `colourprint`
+- `waitforkey`
 
