@@ -25,6 +25,8 @@ module MiscUtil
 
     export colourprint
 
+    export waitforkey
+
     include("transformutil.jl")
 
     include("matricesutil.jl")
@@ -38,5 +40,7 @@ module MiscUtil
     include("bracket.jl")
 
     include("colourprint.jl")
+
+    include("waitforkey.jl")
 
 end
