@@ -1,6 +1,6 @@
 # MiscUtil.jl
 
-Provides common utilities:
+My personal common utilities put in a package for easy usage:
 
 ### Transform parameters
 - `sigmoid` and `invsigmoid`
