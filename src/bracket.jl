@@ -1,6 +1,4 @@
-function bracket(f; Tinitial = 0.0)
-
-    tol = 1e-10
+function bracket(f; Tinitial = 0.0, tol = 1e-10)
 
     step = 0.1
 
