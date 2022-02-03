@@ -1,8 +1,9 @@
 # MiscUtil.jl
 
 To install and use this package, please add first the registry [CollaborativeAstronomyJulia](https://github.com/ngiann/CollaborativeAstronomyJulia).
+Then, switch into "package mode" with ] and add the package with `add MiscUtil`.
 
-My personal common utilities put in a package for easy usage:
+This package containts my personal common utilities put in a package for easy usage:
 
 ### Transform parameters
 - `sigmoid` and `invsigmoid`
