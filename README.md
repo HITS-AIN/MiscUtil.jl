@@ -1,5 +1,7 @@
 # MiscUtil.jl
 
+To install and use this package, please add first the registry [CollaborativeAstronomyJulia](https://github.com/ngiann/CollaborativeAstronomyJulia).
+
 My personal common utilities put in a package for easy usage:
 
 ### Transform parameters
