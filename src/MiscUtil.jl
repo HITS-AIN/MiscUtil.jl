@@ -2,6 +2,7 @@ module MiscUtil
 
     using LinearAlgebra, Printf, Crayons
 
+    import PyPlot: get_cmap
 
     # export calculaterbfbasis, calculaterbfbasis!
 
@@ -27,6 +28,8 @@ module MiscUtil
 
     export waitforkey
 
+    export getcolourrange
+
     include("transformutil.jl")
 
     include("matricesutil.jl")
@@ -42,5 +45,7 @@ module MiscUtil
     include("colourprint.jl")
 
     include("waitforkey.jl")
+
+    include("getcolourrange.jl")
 
 end
