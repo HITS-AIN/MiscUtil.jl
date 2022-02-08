@@ -11,6 +11,7 @@ PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
 
 [compat]
 Crayons = "4"
+PyPlot = "2"
 julia = "1"
 
 [extras]
