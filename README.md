@@ -23,4 +23,4 @@ This package containts my personal common utilities put in a package for easy us
 - `bracket`
 - `colourprint`
 - `waitforkey`
-
+- `plot_ellipse`

@@ -1,8 +1,10 @@
 module MiscUtil
 
-    using LinearAlgebra, Printf, Crayons
+    using LinearAlgebra, Printf, Crayons, PyPlot
 
-    import PyPlot: get_cmap
+    import Distributions: AbstractMvNormal
+
+    import Statistics: mean, cov
 
     # export calculaterbfbasis, calculaterbfbasis!
 
@@ -30,6 +32,8 @@ module MiscUtil
 
     export getcolourrange
 
+    export plot_ellipse
+
     include("transformutil.jl")
 
     include("matricesutil.jl")
@@ -47,5 +51,7 @@ module MiscUtil
     include("waitforkey.jl")
 
     include("getcolourrange.jl")
+
+    include("plot_ellipse.jl")
 
 end
