@@ -1,7 +1,7 @@
 logrange(x1, x2, n) = (10^y for y in range(log10(x1), log10(x2), length=n))
 
 mutable struct LogRange
-    
+
     lr::StepRangeLen
 
 end
@@ -40,4 +40,4 @@ Base.firstindex(a::LogRange)  = firstindex(a.lr)
 
 Base.lastindex(a::LogRange)   = lastindex(a.lr)
 
-# Base.eltype(::Type{LogRange})  = Real
+Base.eltype(::Type{LogRange})  = Real
