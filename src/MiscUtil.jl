@@ -22,7 +22,7 @@ module MiscUtil
 
     export sigmoid, invsigmoid, makepositive, invmakepositive, transformbetween, invtransformbetween
 
-    export logrange
+    export logrange, LogRange
 
     export bracket
 
