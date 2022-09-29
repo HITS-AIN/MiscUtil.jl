@@ -2,6 +2,8 @@ module MiscUtil
 
     using LinearAlgebra, Printf, Crayons, PyPlot
 
+    import Random: randperm, MersenneTwister
+
     import Distributions: AbstractMvNormal
 
     import Statistics: mean, cov
@@ -34,6 +36,8 @@ module MiscUtil
 
     export plot_ellipse
 
+    export CVindices, taketestfold, taketrainfold, folds
+
     include("transformutil.jl")
 
     include("matricesutil.jl")
@@ -53,5 +57,7 @@ module MiscUtil
     include("getcolourrange.jl")
 
     include("plot_ellipse.jl")
+
+    include("CVindices.jl")
 
 end
