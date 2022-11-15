@@ -8,6 +8,8 @@ module MiscUtil
 
     import Statistics: mean, cov
 
+    import StatsFuns: logistic, logit
+
     export safewrapper
 
     export addjitter, addjitter!
