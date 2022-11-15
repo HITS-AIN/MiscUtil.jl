@@ -8,8 +8,6 @@ module MiscUtil
 
     import Statistics: mean, cov
 
-    # export calculaterbfbasis, calculaterbfbasis!
-
     export safewrapper
 
     export addjitter, addjitter!
