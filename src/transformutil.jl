@@ -1,11 +1,11 @@
-sigmoid(x) = StatsFuns.logistic(x)
+sigmoid(x) = logistic(x)
 
-invsigmoid(y) = StatsFuns.logit(x)
+invsigmoid(y) = logit(y)
 
 
-makepositive(x) = StatsFuns.softplus(x)
+makepositive(x) = softplus(x)
 
-invmakepositive(y) = StatsFuns.invsoftplus(y)
+invmakepositive(y) = invsoftplus(y)
 
 
 transformbetween(x, lower, upper) = sigmoid(x) * (upper - lower) + lower
