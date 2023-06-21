@@ -18,6 +18,8 @@ module MiscUtil
 
     export nearestposdef
 
+    export makeorthogonal
+
     export woodbury_A_plus_UCV
 
     export tasksleep

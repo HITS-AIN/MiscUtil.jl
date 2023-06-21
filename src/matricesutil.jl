@@ -93,3 +93,19 @@ function nearestposdef(A; minimumeigenvalue = 1e-6)
     newA
 
 end
+
+
+#-----------------------------------------------------------
+# Create orthogonal matrix
+#-----------------------------------------------------------
+
+"""
+See https://en.wikipedia.org/wiki/Cayley_transform#Matrix_map
+"""
+function makeorthogonal(C)
+    
+    A = C - C'      # make skew-symmetric
+    
+    (I-A) / (I+A)   # make orthogonal
+
+end
