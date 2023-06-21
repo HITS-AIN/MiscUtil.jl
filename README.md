@@ -18,6 +18,7 @@ This package containts my personal common utilities put in a package for easy us
 
 ### Matrix related
 - `addjitter` and `addjitter!`
+- `makeorthogonal`
 - `makematrixsymmetric` and `makematrixsymmetric!`
 - `woodbury_A_plus_UCV`
 - `nearestposdef`
