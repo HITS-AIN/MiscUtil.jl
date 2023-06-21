@@ -1,10 +1,12 @@
-makepositive(x) = exp(x)
+sigmoid(x) = logistic(x)
 
-invmakepositive(y) = log(y)
+invsigmoid(y) = logit(y)
 
-sigmoid(x) = 1.0 / (exp(-x) + 1.0)
 
-invsigmoid(y) = - log(1/y -1.0)
+makepositive(x) = softplus(x)
+
+invmakepositive(y) = invsoftplus(y)
+
 
 transformbetween(x, lower, upper) = sigmoid(x) * (upper - lower) + lower
 

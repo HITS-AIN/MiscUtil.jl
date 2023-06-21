@@ -8,7 +8,7 @@ module MiscUtil
 
     import Statistics: mean, cov
 
-    # export calculaterbfbasis, calculaterbfbasis!
+    import StatsFuns: logistic, logit, softplus, invsoftplus
 
     export safewrapper
 

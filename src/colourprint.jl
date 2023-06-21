@@ -10,3 +10,9 @@ function colourprint(str; foreground = :light_green, bold = false)
     print(Crayon(foreground = foreground, bold = bold), @sprintf("%s", str), Crayon(reset = true))
 
 end
+
+function colourprint(io::IO, str; foreground = :light_green, bold = false)
+
+    print(io, Crayon(foreground = foreground, bold = bold), @sprintf("%s", str), Crayon(reset = true))
+
+end
