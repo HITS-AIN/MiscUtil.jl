@@ -12,7 +12,7 @@ function plot_ellipse(μ, Σ, clr="b", label=""; alpha=1.0)
 ##########################################################
 
     # calculate eigevanlues
-    E = eigvals(Σ)
+    E = eigen(Σ,sortby=+).values # E = eigvals(Σ)
     @assert(E[1]<=E[2])
 
     # calculate eigenvectors, columns are the eigenvectors
