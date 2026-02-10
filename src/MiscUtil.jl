@@ -1,6 +1,6 @@
 module MiscUtil
 
-    using LinearAlgebra, Printf, Crayons, PyPlot
+    using LinearAlgebra, Printf
 
     import Random: randperm, MersenneTwister
 
@@ -30,13 +30,13 @@ module MiscUtil
 
     export bracket
 
-    export colourprint
+    # export colourprint
 
     export waitforkey
 
-    export getcolourrange
+    # export getcolourrange
 
-    export plot_ellipse
+    # export plot_ellipse
 
     export CVindices, taketestfold, taketrainfold, folds
 
@@ -52,13 +52,13 @@ module MiscUtil
 
     include("bracket.jl")
 
-    include("colourprint.jl")
+    # include("colourprint.jl")
 
     include("waitforkey.jl")
 
-    include("getcolourrange.jl")
+    # include("getcolourrange.jl")
 
-    include("plot_ellipse.jl")
+    # include("plot_ellipse.jl")
 
     include("CVindices.jl")
 

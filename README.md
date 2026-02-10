@@ -28,6 +28,4 @@ This package containts my personal common utilities put in a package for easy us
 - `safewrapper`
 - `logrange`
 - `bracket`
-- `colourprint`
 - `waitforkey`
-- `plot_ellipse`
